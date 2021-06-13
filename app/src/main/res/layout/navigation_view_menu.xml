@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/space_8">
+
+
+    <TextView
+        android:id="@+id/textHome"
+        style="@style/TextAppearance.AppCompat.DrawerNavigationTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_home"
+        android:gravity="center_vertical"
+        android:text="@string/title_home" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginTop="@dimen/space_8"
+        android:background="@color/colorGray" />
+
+    <TextView
+        android:id="@+id/textTitleTest"
+        style="@style/TextAppearance.AppCompat.DrawerNavigationTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_test_practice"
+        android:textColor="@color/colorStrongGray"
+        android:textSize="@dimen/text_14" />
+
+    <TextView
+        android:id="@+id/textMiniTest"
+        style="@style/TextAppearance.AppCompat.DrawerNavigationTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_exam_full"
+        android:text="@string/title_mini_test" />
+
+    <TextView
+        android:id="@+id/textTest"
+        style="@style/TextAppearance.AppCompat.DrawerNavigationTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_exam"
+        android:text="@string/title_part_practice" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginTop="@dimen/space_8"
+        android:background="@color/colorGray" />
+
+    <TextView
+        android:id="@+id/textTitleVocabulary"
+        style="@style/TextAppearance.AppCompat.DrawerNavigationTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_600_TOEIC_words"
+        android:textColor="@color/colorStrongGray"
+        android:textSize="@dimen/text_14" />
+
+    <TextView
+        android:id="@+id/textVocabulary"
+        style="@style/TextAppearance.AppCompat.DrawerNavigationTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_vocabulary"
+        android:text="@string/title_vocabulary" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginTop="@dimen/space_8"
+        android:background="@color/colorGray" />
+
+    <TextView
+        android:id="@+id/textTitleReminder"
+        style="@style/TextAppearance.AppCompat.DrawerNavigationTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_settings"
+        android:textColor="@color/colorStrongGray"
+        android:textSize="@dimen/text_14" />
+
+    <TextView
+        android:id="@+id/textReminder"
+        style="@style/TextAppearance.AppCompat.DrawerNavigationTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_settings"
+        android:text="@string/title_settings" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginTop="@dimen/space_8"
+        android:background="@color/colorGray"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textTitleSetting"
+        style="@style/TextAppearance.AppCompat.DrawerNavigationTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_settings"
+        android:textColor="@color/colorStrongGray"
+        android:textSize="@dimen/text_14"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textSetting"
+        style="@style/TextAppearance.AppCompat.DrawerNavigationTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_settings"
+        android:text="@string/title_settings"
+        android:visibility="gone" />
+</LinearLayout>

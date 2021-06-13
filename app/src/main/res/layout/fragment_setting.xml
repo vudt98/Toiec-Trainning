@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.fragments.reminder.RemindFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageBackSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/description"
+            android:padding="@dimen/space_16"
+            android:src="@drawable/ic_back_white_24dp"
+            android:tint="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textTitleSetting"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/title_settings"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_18"
+            app:layout_constraintBottom_toBottomOf="@+id/imageBackSetting"
+            app:layout_constraintEnd_toStartOf="@+id/imageSaveReminder"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageBackSetting"
+            app:layout_constraintTop_toTopOf="@+id/imageBackSetting"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageSaveReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/description"
+            android:padding="@dimen/space_16"
+            android:src="@drawable/ic_check_black_24dp"
+            android:tint="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/viewSeparator0"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/space_8"
+            android:background="#e9e9e9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTitleSetting" />
+
+        <TextView
+            android:id="@+id/textTitleTargetScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_golf_course_black_24dp"
+            android:drawablePadding="@dimen/space_8"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:padding="@dimen/space_8"
+            android:paddingStart="@dimen/space_16"
+            android:paddingEnd="0dp"
+            android:text="@string/title_target_score"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewSeparator0" />
+
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinnerTargetScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:padding="@dimen/space_8"
+            android:paddingStart="@dimen/space_16"
+            android:paddingEnd="0dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintBottom_toBottomOf="@+id/textTitleTargetScore"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textTitleTargetScore"
+            app:layout_constraintTop_toTopOf="@+id/textTitleTargetScore"
+            tools:text="600" />
+
+        <TextView
+            android:id="@+id/textTitleStartDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_today_black_24dp"
+            android:drawablePadding="@dimen/space_8"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:padding="@dimen/space_8"
+            android:paddingStart="@dimen/space_16"
+            android:paddingEnd="0dp"
+            android:text="@string/title_start_day"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTitleTargetScore" />
+
+        <TextView
+            android:id="@+id/textSettingStartDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:drawableEnd="@drawable/ic_edit_24dp"
+            android:padding="@dimen/space_8"
+            android:paddingStart="@dimen/space_16"
+            android:paddingEnd="0dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintBottom_toBottomOf="@+id/textTitleStartDay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textTitleStartDay"
+            app:layout_constraintTop_toTopOf="@+id/textTitleStartDay"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="12/02/2019" />
+
+        <TextView
+            android:id="@+id/textTitleDeadline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_today_black_24dp"
+            android:drawablePadding="@dimen/space_8"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="@dimen/space_8"
+            android:paddingStart="@dimen/space_16"
+            android:paddingEnd="0dp"
+            android:text="@string/title_official_deadline"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTitleStartDay" />
+
+        <TextView
+            android:id="@+id/textOfficialDeadline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:drawableEnd="@drawable/ic_edit_24dp"
+            android:padding="@dimen/space_8"
+            android:paddingStart="@dimen/space_16"
+            android:paddingEnd="0dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintBottom_toBottomOf="@+id/textTitleDeadline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textTitleDeadline"
+            app:layout_constraintTop_toTopOf="@+id/textTitleDeadline"
+            tools:text="02/02/2020" />
+
+        <TextView
+            android:id="@+id/textTitlePracticeMode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_today_black_24dp"
+            android:drawablePadding="@dimen/space_8"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="@dimen/space_8"
+            android:paddingStart="@dimen/space_16"
+            android:paddingEnd="0dp"
+            android:text="@string/title_practice_mode"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTitleDeadline" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinnerPracticeMode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:padding="@dimen/space_8"
+            android:paddingStart="@dimen/space_16"
+            android:paddingEnd="0dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintBottom_toBottomOf="@+id/textTitlePracticeMode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textTitlePracticeMode"
+            app:layout_constraintTop_toTopOf="@+id/textTitlePracticeMode" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <View
+            android:id="@+id/viewSeparator1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/space_8"
+            android:background="#e9e9e9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTitlePracticeMode" />
+
+        <TextView
+            android:id="@+id/textDailyReminder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8"
+            android:padding="@dimen/space_8"
+            android:paddingStart="@dimen/space_16"
+            android:paddingEnd="0dp"
+            android:text="@string/title_daily_reminder"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/switchReminder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewSeparator1" />
+
+
+        <Switch
+            android:id="@+id/switchReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/space_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textDailyReminder" />
+
+        <TextView
+            android:id="@+id/textDoWorkExam"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_8"
+            android:paddingStart="@dimen/space_16"
+            android:paddingEnd="0dp"
+            android:text="@string/title_do_work_exam_reminder"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDailyReminder" />
+
+        <TextView
+            android:id="@+id/textDoWorkExamTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:drawableEnd="@drawable/ic_edit_24dp"
+            android:padding="@dimen/space_8"
+            android:paddingStart="@dimen/space_16"
+            android:paddingEnd="0dp"
+            android:text="@string/time_default"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintBottom_toBottomOf="@+id/textDoWorkExam"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/textDoWorkExam" />
+
+        <TextView
+            android:id="@+id/textDoWorkVocabulary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_8"
+            android:paddingStart="@dimen/space_16"
+            android:paddingEnd="0dp"
+            android:text="@string/title_do_work_vocabulary_reminder"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDoWorkExamTime" />
+
+        <TextView
+            android:id="@+id/textDoWorkVocabularyTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:drawableEnd="@drawable/ic_edit_24dp"
+            android:padding="@dimen/space_8"
+            android:paddingStart="@dimen/space_16"
+            android:paddingEnd="0dp"
+            android:text="@string/time_default"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintBottom_toBottomOf="@+id/textDoWorkVocabulary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/textDoWorkVocabulary" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupConstraintDailyReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="textDoWorkExam,textDoWorkVocabulary,textDoWorkExamTime,textDoWorkVocabularyTime" />
+
+        <View
+            android:id="@+id/viewSeparator2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/space_8"
+            android:background="#e9e9e9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDoWorkVocabulary" />
+
+        <TextView
+            android:id="@+id/textReviewWords"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8"
+            android:padding="@dimen/space_8"
+            android:paddingStart="@dimen/space_16"
+            android:paddingEnd="0dp"
+            android:text="@string/title_review_words"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/switchReviewWords"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewSeparator2" />
+
+        <Switch
+            android:id="@+id/switchReviewWords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/space_8"
+            app:layout_constraintBottom_toBottomOf="@+id/textReviewWords"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textReviewWords" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerReviews"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textReviewWords"
+            tools:itemCount="12"
+            tools:listitem="@layout/item_topic_review" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

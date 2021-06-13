@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frgmtIntroScore"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/intro_background_2"
+    tools:context=".ui.fragments.intro.IntroScoreFragment">
+
+    <TextView
+        android:id="@+id/lblAimedScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="@string/text_desired_score"
+        android:textAllCaps="true"
+        android:textColor="#F1F1F1"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnScoreNext"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="93dp"
+        android:backgroundTint="#F7DDCC"
+        android:text="@string/button_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnScore"
+        android:layout_width="254dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/textview_background"
+        android:dropDownWidth="50dp"
+        android:gravity="center"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAimedScore" />
+
+    <Button
+        android:id="@+id/btnScoreBack"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="93dp"
+        android:text="@string/button_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

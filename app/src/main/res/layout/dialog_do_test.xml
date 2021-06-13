@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_24"
+        android:layout_marginEnd="@dimen/space_24"
+        android:background="@drawable/corner_20">
+
+        <TextView
+            android:id="@+id/textview_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_24"
+            android:text="@string/submit_test_ask"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/button_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="@dimen/space_19"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="@dimen/space_24"
+            android:background="@drawable/color_primarycolor_corner_10"
+            android:paddingStart="@dimen/space_26"
+            android:paddingTop="@dimen/space_13"
+            android:paddingEnd="@dimen/space_26"
+            android:paddingBottom="@dimen/space_13"
+            android:text="@string/submit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_26"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_not_submit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_1" />
+
+
+        <TextView
+            android:id="@+id/button_not_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/space_19"
+            android:layout_marginEnd="@dimen/text_26"
+            android:layout_marginBottom="@dimen/space_24"
+            android:background="@drawable/stroke_pink_1_corner_10"
+            android:paddingStart="@dimen/space_26"
+            android:paddingTop="@dimen/space_13"
+
+            android:paddingEnd="@dimen/space_26"
+            android:paddingBottom="@dimen/space_13"
+            android:text="@string/not_submit"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_26"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_submit"
+            app:layout_constraintTop_toBottomOf="@id/textview_1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="130dp"
+    android:layout_margin="@dimen/space_5"
+    android:background="@drawable/corner_10_border_primaricolor">
+
+    <ImageView
+        android:id="@+id/icon_type_part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginEnd="@dimen/space_10"
+        android:contentDescription="@string/sound"
+        android:src="@drawable/sound_24_primarycolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_part"
+        android:layout_width="@dimen/space_64"
+        android:layout_height="@dimen/space_64"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/circle_border_black"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/des_part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_part" />
+</androidx.constraintlayout.widget.ConstraintLayout>

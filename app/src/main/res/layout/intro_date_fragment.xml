@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frgmtIntroDate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/intro_background_2"
+    tools:context=".ui.fragments.intro.IntroDateFragment">
+
+    <TextView
+        android:id="@+id/lblIntendedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="@string/text_intended_test_date"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#F1E7E1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDateNext"
+        android:layout_width="147dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="189dp"
+        android:layout_marginBottom="93dp"
+        android:backgroundTint="#F7DDCC"
+        android:text="@string/button_next"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDate" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="254dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/textview_background"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/text_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblIntendedDate" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.fragments.reminder.RemindFragment">
+
+    <ImageView
+        android:id="@+id/imageBackRemind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/description"
+        android:padding="@dimen/space_16"
+        android:src="@drawable/ic_back_white_24dp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTitleReminder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/title_remind"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_18"
+        app:layout_constraintBottom_toBottomOf="@+id/imageBackRemind"
+        app:layout_constraintEnd_toStartOf="@+id/imageSaveReminder"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageBackRemind"
+        app:layout_constraintTop_toTopOf="@+id/imageBackRemind"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageSaveReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/description"
+        android:padding="@dimen/space_16"
+        android:src="@drawable/ic_check_black_24dp"
+        android:tint="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewSeparator1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/space_8"
+        android:background="#e9e9e9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitleReminder" />
+
+    <TextView
+        android:id="@+id/textDailyReminder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8"
+        android:padding="@dimen/space_8"
+        android:paddingStart="@dimen/space_16"
+        android:paddingEnd="0dp"
+        android:text="@string/title_daily_reminder"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSeparator1" />
+
+
+    <TextView
+        android:id="@+id/textEnableTimer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_8"
+        android:paddingStart="@dimen/space_16"
+        android:paddingEnd="0dp"
+        android:text="@string/title_enable_reminder"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintEnd_toStartOf="@+id/switchReminder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDailyReminder" />
+
+    <Switch
+        android:id="@+id/switchReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/space_8"
+        app:layout_constraintBottom_toBottomOf="@+id/textEnableTimer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textEnableTimer" />
+
+    <TextView
+        android:id="@+id/textPickerTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:drawableEnd="@drawable/ic_edit_24dp"
+        android:padding="@dimen/space_8"
+        android:paddingStart="@dimen/space_16"
+        android:paddingEnd="0dp"
+        android:text="@string/time_default"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_16"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEnableTimer" />
+
+    <View
+        android:id="@+id/viewSeparator2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/space_8"
+        android:background="#e9e9e9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPickerTime" />
+
+    <TextView
+        android:id="@+id/textReviewWords"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8"
+        android:padding="@dimen/space_8"
+        android:paddingStart="@dimen/space_16"
+        android:paddingEnd="0dp"
+        android:text="@string/title_review_words"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSeparator2" />
+
+    <TextView
+        android:id="@+id/textEnableReviewMode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_8"
+        android:paddingStart="@dimen/space_16"
+        android:paddingEnd="0dp"
+        android:text="@string/title_enable_review_mode"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintEnd_toStartOf="@+id/switchReviewWords"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textReviewWords" />
+
+    <Switch
+        android:id="@+id/switchReviewWords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/space_8"
+        app:layout_constraintBottom_toBottomOf="@+id/textEnableReviewMode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textEnableReviewMode" />
+
+    <View
+        android:id="@+id/viewSeparator3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/space_8"
+        android:background="#e9e9e9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEnableReviewMode" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerReviews"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSeparator3"
+        tools:itemCount="12"
+        tools:listitem="@layout/item_topic_review" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#966474</color>
+    <color name="colorPrimaryDark">#663344</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBusiness">#090909</color>
+    <color name="colorOffice">#A77275</color>
+    <color name="colorPersonal">#B3877F</color>
+    <color name="colorPurchasing">#CD9973</color>
+    <color name="colorFinancing">#CEB388</color>
+    <color name="colorManagement">#C1BD8F</color>
+    <color name="colorRestaurants">#A4B094</color>
+    <color name="colorTravel">#82A395</color>
+    <color name="colorEntertainment">#82A395</color>
+    <color name="colorHealth">#7D6A93</color>
+    <color name="colorBlurWhite">#a2ffffff</color>
+    <color name="colorProgressBarNew">#6e999999</color>
+    <color name="colorProgressBarReview">#47966474</color>
+    <color name="colorProgressBarMaster">#966474</color>
+    <color name="colorGreen">#FFBCFFC7</color>
+    <color name="colorPink">#FFFFAAAC</color>
+    <color name="colorGray">#FFC8C8C8</color>
+    <color name="colorStrongGray">#585858</color>
+    <color name="colorGreenLight">#4CAF50</color>
+    <color name="colorRed">#FFEB3B</color>
+</resources>

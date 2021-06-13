@@ -1,0 +1,187 @@
+<resources>
+    <string name="app_name">Luyện thi TOEIC</string>
+
+    <!--    Buttons-->
+    <string name="button_no">No</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_back">Back</string>
+    <string name="button_next">Next</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_ok">OK</string>
+    <string name="button_change_date">Change Date</string>
+    <string name="button_finish">Finish</string>
+
+    <!--    Score Choices-->
+    <string-array name="scores">
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
+        <item>550</item>
+        <item>600</item>
+        <item>650</item>
+        <item>700</item>
+        <item>750</item>
+        <item>800</item>
+        <item>850</item>
+        <item>900</item>
+        <item>950</item>
+    </string-array>
+
+    <string-array name="resultLevels">
+        <item><![CDATA[<font color="#ff0000">Yếu</font>]]></item>
+        <item><![CDATA[<font color="#993300">Trung bình</font>]]></item>
+        <item><![CDATA[<font color="#009933">Tốt</font>]]></item>
+        <item><![CDATA[<font color="#0000cc">Rất tốt</font>]]></item>
+    </string-array>
+
+    <!--    Intensity Choices-->
+    <string-array name="intensity">
+        <item>Thấp</item>
+        <item>Trung bình</item>
+        <item>Cao</item>
+    </string-array>
+
+    <!--    Test-Fix-->
+    <string name="test_fixed_date">26/12/2019</string>
+    <string name="test_fixed_score">400</string>
+    <string name="test_fixed_intensity">1 phần đề/1 ngày</string>
+
+    <!--    Intro-->
+    <string name="text_intended_test_date">Bạn sẽ thi TOEIC vào ngày nào?</string>
+    <string name="text_desired_score">Bạn mong muốn đạt được bao nhiêu điểm?</string>
+    <string name="text_intensity">Bạn mong muốn bắt đầu học với mức độ nào?</string>
+
+    <!--    Navigation view-->
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="test_toeic">Luyện thi TOEIC</string>
+    <string name="learn_words">Học từ vựng</string>
+
+    <!--    Test main scree-->
+    <string name="part_1">Part 1</string>
+    <string name="full_7_part">Full 7 Part</string>
+    <string name="part_7">Part 7</string>
+    <string name="part_6">Part 6</string>
+    <string name="part_5">Part 5</string>
+    <string name="part_4">Part 4</string>
+    <string name="part_3">Part 3</string>
+    <string name="part_2">Part 2</string>
+    <string name="start_test_time">Thời gian: 30:00</string>
+    <string name="start">Bắt đầu</string>
+    <string name="time">Thời gian làm bài: \t</string>
+    <string name="part">Part: \t</string>
+    <string name="test_full">Test Full</string>
+    <string name="history">Lịch sử</string>
+    <!--    <string name="title_show_word_detail">Tap to show detail</string>-->
+    <!--    <string name="title_pronoun">pronun</string>-->
+    <!--    <string name="title_level">Level</string>-->
+    <!--    <string name="title_knew_word">I knew this word</string>-->
+    <!--    <string name="title_didnt_know_word">I didn\'t know this word</string>-->
+    <!--    <string name="title_never">Never</string>-->
+    <!--    <string name="title_reviewing">Reviewing</string>-->
+    <!--    <string name="title_master">Master</string>-->
+    <!--    <string name="title_vocabulary">Vocabulary</string>-->
+    <string name="title_show_word_detail">Hiển thị chi tiết</string>
+    <string name="title_pronoun">Phát âm</string>
+    <string name="title_level">Mức độ</string>
+    <string name="title_knew_word">Tôi nhớ từ này</string>
+    <string name="title_didnt_know_word">Tôi quên từ này</string>
+    <string name="title_never">Mới toanh</string>
+    <string name="title_reviewing">Ôn tập</string>
+    <string name="title_master">Bá đạo</string>
+    <string name="title_vocabulary">Từ vựng</string>
+    <string name="submit_test">Nộp bài</string>
+
+    <string name="submit_test_ask">Nộp bài?</string>
+    <string name="submit">Nộp</string>
+    <string name="not_submit">Chưa</string>
+    <string name="test_time_total">Thời gian: \t</string>
+    <string name="read_score">Điểm đọc: \t</string>
+    <string name="listen_score">Điểm nghe: \t</string>
+    <string name="total_score">Tổng điểm\t</string>
+    <string name="total_score_2">Tổng điểm: \t</string>
+    <string name="total_score_example">800</string>
+    <string name="continue_do_test">Làm tiếp</string>
+    <string name="answer">Đáp án</string>
+    <!--    <string name="title_remind">Reminder</string>-->
+    <!--    <string name="title_daily_reminder">Daily reminder</string>-->
+    <!--    <string name="description">description</string>-->
+    <!--    <string name="title_enable_reminder">Enable reminder</string>-->
+    <!--    <string name="title_review_words">Review words</string>-->
+    <!--    <string name="title_enable_review_mode">Enable review mode</string>-->
+    <!--    <string name="time_default">00:00</string>-->
+    <!--    <string name="msg_remind_topics">Enable review mode with words in topic %s</string>-->
+    <!--    <string name="msg_save_setting">The setting has been saved</string>-->
+    <!--    <string name="content_title_daily_reminder_notification">Time to study</string>-->
+    <!--    <string name="content_text_daily_reminder_notification">Tap to start</string>-->
+    <string name="title_remind">Nhắc nhở</string>
+    <string name="title_daily_reminder">Nhắc nhở hằng ngày</string>
+    <string name="description">description</string>
+    <string name="title_enable_reminder">Bật nhắc nhở</string>
+    <string name="title_review_words">Ôn tập từ vựng</string>
+    <string name="title_enable_review_mode">Bật chế độ ôn tập từ vựng</string>
+    <string name="time_default">09:00</string>
+    <string name="msg_remind_topics">Đã bật chế độ ôn tập từ vựng trong topic</string>
+    <string name="msg_save_setting">Đã lưu sự thay đổi</string>
+    <string name="content_title_daily_reminder_notification">Đến giờ học rồi</string>
+    <string name="content_text_daily_reminder_notification">Ấn vào đây để chinh phục mục tiêu của bạn nhé</string>
+    <string name="title_home">Trang chủ</string>
+    <string name="title_test_practice">Luyện Thi TOEIC</string>
+    <string name="title_mini_test">Làm bài thi thử</string>
+    <string name="title_part_practice">Luyện thi theo phần</string>
+    <string name="text_600_TOEIC_words">600 Từ vựng TOEIC\'s</string>
+    <string name="title_reminder">Nhắc nhở</string>
+    <string name="title_remind_days_left"> Chỉ còn <font size="20">%s</font> ngày</string>
+    <string name="msg_remind_days_left">Hôm nay là ngày %s, bạn còn %s ngày nữa để luyện thi</string>
+    <string name="msg_remind_deadline">Ngày thi của bạn là %s, chúc bạn ôn thi tốt!</string>
+    <string name="title_start_day">Ngày bắt đầu</string>
+    <string name="title_end_day">Ngày kết thúc</string>
+    <string name="id_exam">Mã đề:\t</string>
+    <string name="index_question">Câu số: \t</string>
+    <string name="result">Kết quả: \t</string>
+    <string name="correct_answer">Đáp án đúng:</string>
+    <string name="my_answer">Đáp án của bạn:</string>
+    <string name="no">Không</string>
+    <string name="exit">Thoát</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+    <string name="right">Đúng</string>
+    <string name="failed">Sai</string>
+    <string name="date_time_format">dd/MM/yyyy HH:mm:ss</string>
+    <string name="easy">Dễ</string>
+    <string name="medium">Trung Bình</string>
+    <string name="hard">Khó</string>
+    <string name="learn_more">Học Thêm</string>
+    <string name="weak">Yếu</string>
+    <string name="result_detail">Chi tiết kết quả</string>
+    <string name="title_today">Hôm nay : %s</string>
+    <string name="msg_days_left_after">ngày để bạn ôn luyện</string>
+    <string name="title_count_down">Đếm ngược trước ngày thi</string>
+    <string name="msg_days_left_before">Còn</string>
+    <string name="title_daily_works">Công việc hôm nay</string>
+    <string name="title_recently_result">Kết quả thi thử gần nhất</string>
+    <string name="title_part_1">Part 1</string>
+    <string name="title_settings">Cài đặt</string>
+    <string name="title_part">Part %d</string>
+    <string name="sound">sound</string>
+    <string name="des_part_1">Mô tả tranh</string>
+    <string name="des_part_2">Hỏi đáp</string>
+    <string name="des_part_3">Đoạn hội thoại</string>
+    <string name="des_part_4">Bài nói ngắn</string>
+    <string name="des_part_5">Điền chỗ trống</string>
+    <string name="des_part_6">Điền đoạn văn</string>
+    <string name="des_part_7">Đọc hiểu</string>
+    <string name="title_official_deadline">Ngày thi</string>
+    <string name="title_practice_mode">Chế độ ôn luyện</string>
+    <string name="title_do_work_exam_reminder">Giờ làm bài thi thử</string>
+    <string name="title_do_work_vocabulary_reminder">Giờ học từ vựng</string>
+    <string name="title_practice_low">Thấp</string>
+    <string name="title_practice_normal">Trung bình</string>
+    <string name="title_practice_high">Cao</string>
+    <string name="msg_remind_do_test">Nhiệm vụ hôm nay là luyện thi theo từng phần</string>
+    <string name="msg_remind_learn_vocabulary">Hôm nay ôn lại vốn từ vựng của mình nhé</string>
+    <string name="title_target_score">Mục tiêu</string>
+</resources>
